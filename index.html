@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <nav>
+        <a href="index.html" class="tabs">Home</a> |
+        <a href="about.html" class="tabs">About</a> |
+        <a href="about.html" class="tabs">Skills</a> |
+        <a href="about.html" class="tabs">Projects</a> |
+        <a href="about.html" class="tabs">Contact</a>
+    </nav>
+
+    <img src="pfp.jpg" alt="Profile Picture" id="profile-pic">
+
+    <header id="intro">
+        <h1>Aayush Kumar</h1>
+        <h2>Student at South Asian University</h2>
+        <h3>I am a B.Tech student at <u><a href="https://sau.int/" target="_blank" rel="noopener noreferrer" id="college-link">
+            South Asian University</a></u><br> pursuing a degree in Computer Science.</h3>
+    </header>
+
+    <h2 class="small-h2">Academic Table</h2>
+    <table border="1px solid black" id="table">
+        <tr>
+            <th>Education</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>10th</td>
+            <td>2023</td>
+        </tr>
+        <tr>
+            <td>12th</td>
+            <td>2025</td>
+        </tr>
+        <tr>
+            <td>B.Tech (CSE)</td>
+            <td>2029</td>
+        </tr>
+    </table>
+
+<div class="skills">
+    <h2 class="small-h2">Skills</h2>
+
+    <p>Python</p>
+    <div class="skill-bar">
+        <div class="skill-fill python"></div>
+    </div>
+
+    <p>C</p>
+    <div class="skill-bar">
+        <div class="skill-fill c"></div>
+    </div>
+</div>
+
+<h2 class="small-h2">Projects</h2><br><br>
+<div class="projects">
+    <div class="project-card">Fake News Detector</div>
+    <div class="project-card">Portfolio Website</div>
+    <div class="project-card">Chatroom App (KOGANE)</div>
+</div>
+
+
+    <h2>Feedback Form</h2>
+    <form>
+        <textarea name="Feedback" rows="10" cols="50" wrap></textarea><br>
+        <input type="submit">
+    </form>
+<h2>JavaScript Interaction Panel</h2>
+
+<div>
+    <button onclick="welcomeUser()">Welcome</button>
+    <button id="quizBtn">Start Quiz</button>
+    <button onclick="collectSkills()">Skills</button>
+    <button onclick="checkGrade()">Grade Checker</button>
+</div>  
+</body>
+
+<script src="script.js"></script>
+
+</html>
